@@ -1,0 +1,23 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  // margin-top: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  outline: 1px solid hotpink;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
