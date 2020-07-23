@@ -42,4 +42,13 @@ form label, form input {
 section {
   margin-top: 5vh;
 }
+
+.options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
 /*# sourceMappingURL=layout.css.map */

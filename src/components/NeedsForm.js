@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Calculator = ({ setMaskDays }) => {
+const NeedsForm = ({ setMaskDays }) => {
   const [result, setResult] = useState();
   const [pop, setPop] = useState("0");
   const [days, setDays] = useState("0");
@@ -9,8 +9,7 @@ const Calculator = ({ setMaskDays }) => {
   //   days: "0"
   // });
   useEffect(() => {
-    console.log(typeof(pop));
-    let product = parseFloat(pop) + parseFloat(days);
+    let product = parseFloat(pop) * parseFloat(days);
     if (isNaN(product)) product = 0;
     setResult(product);
     setMaskDays(product);
@@ -35,17 +34,17 @@ const Calculator = ({ setMaskDays }) => {
   }
 
   return (
-    <div className="calculator">
-      <h1>PPE Calculator</h1>
+    <div className="needs-form">
+      <h1>Mask Needs</h1>
       <form>
-        <label for="pop">Number of employees:</label><br />
+        <label htmlFor="pop">Number of employees:</label><br />
         <input type="text"
           id="pop"
           name="pop"
           value={pop}
           onChange={handlePopChange}
         /><br />
-        <label for="days">Number of days:</label><br />
+        <label htmlFor="days">Number of days:</label><br />
         <input type="text"
           id="days"
           name="days"
@@ -58,4 +57,4 @@ const Calculator = ({ setMaskDays }) => {
   );
 }
 
-export default Calculator;
+export default NeedsForm;
