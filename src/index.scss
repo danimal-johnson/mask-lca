@@ -1,20 +1,20 @@
 @charset 'utf-8';
 
 // Abstracts
-@import './stylesheets/variables';
+@import './stylesheets/_variables';
 // ...functions, mixins, placeholders
 
 // Base
-@import './stylesheets/reset';
-@import './stylesheets/base';
+@import './stylesheets/_reset';
+@import './stylesheets/_base';
 // ...typography
 
 // Components
 // ...buttons, carousel, cover, dropdown
-@import './stylesheets/components';
+@import './stylesheets/_components';
 
 // Layout
-@import './stylesheets/layout';
+@import './stylesheets/_layout';
 
 // ...navigation, grid, header, footer, sidebar, forms
 
