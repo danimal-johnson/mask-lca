@@ -6,7 +6,6 @@
   border: 0;
   font: inherit;
   vertical-align: baseline;
-  outline: 1px solid hotpink;
 }
 
 body {
@@ -38,8 +37,17 @@ h1 {
   font-size: 2.1rem;
 }
 
+p {
+  font-size: 1.6rem;
+}
+
 .needs-form {
   margin-top: 4rem;
+  width: 350px;
+}
+
+.mask-card {
+  margin: 1rem;
 }
 
 .App {
@@ -77,6 +85,7 @@ h1 {
 form {
   font-size: 2rem;
   padding: 1rem;
+  background: #bbb;
 }
 
 form label, form input {
@@ -84,7 +93,21 @@ form label, form input {
 }
 
 section {
-  margin-top: 5vh;
+  padding: 5vh 0;
+  width: 100%;
+}
+
+.needs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: teal;
 }
 
 .options {

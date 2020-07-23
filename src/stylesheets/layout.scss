@@ -22,10 +22,19 @@ form {
   label, input {
     margin-bottom: 0.8rem;
   }
+  background: #bbb;
 }
 
 section {
-  margin-top: 5vh;
+  padding: 5vh 0;
+  width: 100%;
+}
+
+.needs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: teal;
 }
 
 .options {
