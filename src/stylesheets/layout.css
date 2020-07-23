@@ -36,6 +36,10 @@ form {
 }
 
 form label, form input {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+section {
+  margin-top: 5vh;
 }
 /*# sourceMappingURL=layout.css.map */
