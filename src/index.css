@@ -51,6 +51,7 @@ p {
 
 .mask-card {
   margin: 1rem;
+  background-color: lightgrey;
 }
 
 .App {
@@ -72,7 +73,7 @@ p {
 .header {
   width: 100vw;
   height: 6rem;
-  color: white;
+  color: black;
   background: #62ACB8;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,7 +97,7 @@ form label, form input {
 }
 
 section {
-  padding: 5vh 0;
+  padding: 5rem 0;
   width: 100%;
 }
 

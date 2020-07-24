@@ -4,16 +4,17 @@ const NeedsForm = ({ setMaskDays }) => {
   const [result, setResult] = useState();
   const [pop, setPop] = useState("0");
   const [days, setDays] = useState("0");
+  const [perDay, setPerDay] = useState("0");
   // const [fields, setFields] = useState({
   //   pop: "0",
   //   days: "0"
   // });
   useEffect(() => {
-    let product = parseFloat(pop) * parseFloat(days);
+    let product = parseFloat(pop) * parseFloat(days) * parseFloat(perDay);
     if (isNaN(product)) product = 0;
     setResult(product);
     setMaskDays(product);
-  }, [pop, days, setMaskDays]);
+  }, [pop, days, perDay, setMaskDays]);
 
   // const handleFieldChange = e => {
   //   e.preventDefault();
@@ -33,6 +34,11 @@ const NeedsForm = ({ setMaskDays }) => {
     setDays(e.target.value);
   }
 
+  const handlePerDayChange = e => {
+    e.preventDefault();
+    setPerDay(e.target.value);
+  }
+
   return (
     <div className="needs-form">
       <h1>Mask Needs</h1>
@@ -50,6 +56,13 @@ const NeedsForm = ({ setMaskDays }) => {
           name="days"
           value={days}
           onChange={handleDaysChange}
+        /><br />
+        <label htmlFor="perDay">Masks per day:</label><br />
+        <input type="text"
+          id="perDay"
+          name="perDay"
+          value={perDay}
+          onChange={handlePerDayChange}
         /><br />
       </form>
   <p>Total mask days = {result}</p>
