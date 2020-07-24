@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
-import NeedsForm from './components/NeedsForm';
+import NeedsCard from './components/NeedsCard';
 import MaskCard from './components/MaskCard';
 import useFetchMasks from './hooks/useFetchMasks';
 
@@ -25,7 +25,7 @@ function App() {
     <div className="App">
       <Header />
       <section className="needs">
-        <NeedsForm setMaskDays={setMaskDays} />
+        <NeedsCard setMaskDays={setMaskDays} />
       </section>
       <section className="options">
         { masks.length && 

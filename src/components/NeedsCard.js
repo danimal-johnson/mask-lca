@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const NeedsForm = ({ setMaskDays }) => {
+const NeedsCard = ({ setMaskDays }) => {
   const [result, setResult] = useState();
   const [pop, setPop] = useState("0");
   const [days, setDays] = useState("0");
@@ -40,7 +40,7 @@ const NeedsForm = ({ setMaskDays }) => {
   }
 
   return (
-    <div className="needs-form">
+    <div className="needs-card">
       <h1>Mask Needs</h1>
       <form>
         <label htmlFor="pop">Number of employees:</label><br />
@@ -69,4 +69,4 @@ const NeedsForm = ({ setMaskDays }) => {
   );
 }
 
-export default NeedsForm;
+export default NeedsCard;
