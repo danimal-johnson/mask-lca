@@ -28,14 +28,27 @@ export default function MaskCard({style, update, masks }) {
               <option
                 key={item.id}
                 value={item.id}
-              >{item.id + ":" + item.name}</option>
+              >{item.name}</option>
             )
           })}
         </select>
       </form>
-        <p>Selected: Style #{style}</p>
-        <p>{masks[index].text}</p>
-        <p>${masks[index].cost}</p>
+      <div className="description">
+        <p>{masks[index].desc}</p>
+      </div>
+        <h2>Per-mask information</h2>
+      <div className="value">
+        <p>${masks[index].cost} each.</p>
+        <p>Reusable {masks[index].uses} times.</p>
+      </div>
+      <div className="impact">
+        <p>Total Mass:</p>
+        <p>Renewable material:</p>
+        <p>Recycled material potential:</p>
+        <p>Recyclable mass:</p>
+        <p>CO2 footprint:</p>
+        <p>Land use:</p>
+      </div>
     </div>
   )
 }

@@ -18,11 +18,10 @@
 
 form {
   font-size: 2rem;
-  padding: 1rem;
-  label, input {
+  input, select {
+    margin-top: 0.4rem;
     margin-bottom: 0.8rem;
   }
-  background: #bbb;
 }
 
 section {
@@ -39,6 +38,16 @@ section {
 
 .options {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   background: salmon;
+}
+
+.results {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
 }

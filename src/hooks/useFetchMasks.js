@@ -3,22 +3,25 @@ import { useReducer, useEffect } from 'react';
 // Temporarily store these here until a back end is created.
 const maskData = [
   { id: 1,
+    abbr: "Olsen",
     name: "Olsen pattern, cotton, 700 threadcount",
-    text: "Cotton home-made mask from the Internet",
+    desc: "Hand-sewn cotton. Popular form-fitting design. Machine washable.",
     cost: 15.0,
-    uses: 1
+    uses: 30
   },
   { id: 2,
+    abbr: "3M 8210",
     name: "N95, no valve, 3M 8210",
-    text: "Heavy-duty respirator. NIOSH standard. Filters 95% of particulates.",
+    desc: "Heavy-duty respirator. NIOSH standard. Filters 95% of particulates.",
     cost: 7.25,
     uses: 1
   },
   { id: 3,
+    abbr: "KN95",
     name: "KN95, polypropylene, various manufacturers.",
-    text: "Respirator. Chinese standard. Filters 94% of particulates.",
+    desc: "Respirator. Chinese standard. Filters 94% of particulates.",
     cost: 3.0,
-    uses: 30
+    uses: 1
   }
 ];
 

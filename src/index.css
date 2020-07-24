@@ -45,13 +45,48 @@ p {
 }
 
 .needs-form {
-  margin-top: 4rem;
-  width: 350px;
+  padding: 1rem;
+  width: 300px;
+  background-color: lightgrey;
+}
+
+.needs-form h1 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: .5rem;
 }
 
 .mask-card {
+  width: 450px;
   margin: 1rem;
   background-color: lightgrey;
+  padding: 1rem;
+}
+
+.mask-card h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: .6rem;
+}
+
+.mask-card .description {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mask-card .value {
+  margin-top: 1rem;
+  padding-bottom: .6rem;
+  border-bottom: 2px solid darkgray;
+}
+
+.mask-card .impact {
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.mask-card p {
+  margin-bottom: .4rem;
 }
 
 .App {
@@ -88,11 +123,10 @@ p {
 
 form {
   font-size: 2rem;
-  padding: 1rem;
-  background: #bbb;
 }
 
-form label, form input {
+form input, form select {
+  margin-top: 0.4rem;
   margin-bottom: 0.8rem;
 }
 
@@ -118,9 +152,19 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   background: salmon;
+}
+
+.results h1 {
+  font-size: 4rem;
+}
+
+.results h2 {
+  font-size: 2rem;
 }
 /*# sourceMappingURL=index.css.map */

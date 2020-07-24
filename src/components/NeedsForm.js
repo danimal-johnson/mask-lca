@@ -65,7 +65,6 @@ const NeedsForm = ({ setMaskDays }) => {
           onChange={handlePerDayChange}
         /><br />
       </form>
-  <p>Total mask days = {result}</p>
     </div>
   );
 }
